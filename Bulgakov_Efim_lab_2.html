@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Определение кодировки кириллицы UTF-8 -->
+		<meta charset="utf-8">
+		<!-- Установка цвета фона таблицы, цвета текста, цвета фона вокруг ячеек, поля вокруг текста -->
+		<style> div {line-height: 1.7} table {background: white; color: white} td, th {background: #900000; padding: 8px}</style>
+		<title>Bulgakov Efim (lab #2)</title>
+	</head>
+	<body background="https://goo.su/26XX" link="#F5F5F5" vlink="#00FFFF" alink="#7CFC00">
+		<hr color="#F5F5F5">
+		<a href="C:/Users/Efimka/Desktop/5 семестр/WEB-программирование/Сделано/Лабораторная работа №1/Bulgakov_Efim_lab_1.html"><img src="https://goo.su/26XL" width="150" height="161" align="left" alt="Clever Fox" title="Главная страница"></a>
+		<div align="middle" style="margin-right: 150px"></font><font size="7" color="#F5F5F5" face="gabriola">FEEDBACK</font>
+		<br><font size="5" color="#F5F5F5" face="sans-serif">Спасибо, что поcетили мой сайт!<br>Оставьте, пожалуйста, Ваш отзыв о сайте через форму обратной связи, расположенную ниже.</font></div>
+		<hr color="#F5F5F5">
+		<form action="mailto:efimandreevich@yandex.ru" method="post">
+		<font size="4" color="#F5F5F5"><table border cellspacing="3" align="center" width="600px">
+			<tr>
+				<!-- Определение элемента формы для ввода небольшого текста (с добавлением подсказки пользователю) -->
+				<td><label for="UserName">Имя:</label></td>
+				<td><input name="userName" id="UserName" type="text" placeholder="Введите имя" size="48" tabindex="1" required></td>
+			</tr>
+			<tr>
+				<td><label for="UserSurname">Фамилия:</label></td>
+				<td><input name="userSurname" id="UserSurname" type="text" placeholder="Введите фамилию" size="48" tabindex="2" required></td>
+			</tr>
+			<tr>
+				<td><label for="UserPatronymic">Отчество:</label></td>
+				<td><input name="userPatronymic" id="UserPatronymic" type="text" placeholder="Введите отчество" size="48" tabindex="3"></td>
+			</tr>
+			<tr>
+				<td><label for="UserAge">Возраст:</label></td>
+				<td><input name="userAge" id="UserAge" type="number" placeholder="Введите возраст" tabindex="4"></td>
+			</tr>
+			<tr>
+				<td><label for="UserAddress">Адрес:</label></td>
+				<td><input name="userAddress" id="UserAddress" type="text" placeholder="Введите адрес" size="48" tabindex="5"></td>
+			</tr>
+			<tr>
+				<td><label for="UserTel">Телефон:</label></td>
+				<td><input name="userTel" id="UserTel" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Формат: 0-123-456-7890" size="48" tabindex="6"></td>
+			</tr>
+			<tr>
+				<td><label for="UserEmail">E-mail:</label></td>
+				<td><input name="userEmail" id="UserEmail" type="email" placeholder="Введите почту" size="48" tabindex="7" required></td>
+			</tr>
+			<tr>
+				<td><label for="UserAreasOfInterest">Ваши интересы:</label></td>
+				<td>
+					<input name="userAreasOfInterest[]"  id="UserAreasOfInterest" type="checkbox" value="Programming" tabindex="8" checked>Разработка ПО и Web-ресурсов<br>
+					<input name="userAreasOfInterest[]"  id="UserAreasOfInterest" type="checkbox" value="Sport" tabindex="9">Спорт<br>
+					<input name="userAreasOfInterest[]"  id="UserAreasOfInterest" type="checkbox" value="Music" tabindex="10">Музыка<br>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="UserMainFieldOfActivity">Основная сфера деятельности:</label></td>
+				<td>
+					<input name="userMainFieldOfActivity" id="UserMainFieldOfActivity" type="radio" value="Sport" tabindex="11">Спорт<br>
+					<input name="userMainFieldOfActivity" id="UserMainFieldOfActivity" type="radio" value="Programming" tabindex="11" checked>Разработка ПО и Web-ресурсов<br>
+					<input name="userMainFieldOfActivity" id="UserMainFieldOfActivity" type="radio" value="Music" tabindex="11">Музыка<br>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="UserSiteRating">Оцените мой сайт:</label></td>
+				<td>
+					<select name="userSiteRating" id="UserSiteRating">
+						<option value="5">5</option>
+						<option value="4" selected>4</option>
+						<option value="3">3</option>
+						<option value="2">2</option>
+						<option value="1">1</option>
+						<option value="IFindItDifficultToAnswer">Затрудняюсь ответить</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<!-- Определение элемента формы для ввода большого текста -->
+				<td><label for="UserComment">Комментарий:</label></td>
+				<td><textarea name="userComment" id="UserComment" placeholder="Введите комментарий" cols="45" rows="5" tabindex="12"></textarea></td>
+			</tr>
+		</table></font>
+		<!-- Определение элемента формы - кнопки для завершения ввода данных и их отправки -->
+		<p align="center"><input type="submit">
+		<!-- Определение элемента формы - кнопки для отчистки полей ввода данных -->
+		<input type="reset" value="Очистить форму"></p>
+		</form>
+		<hr color="#F5F5F5" border="none">
+			<p align="center"><b><font color="#F5F5F5" face="sans-serif">Написать разработчику: <a href="mailto:efimandreevich@yandex.ru" title="Моя электронная почта">efimandreevich@yandex.ru</a></font></b></p>
+			<p align="center"><b><font color="#F5F5F5" face="sans-serif">&copy; Сайт разработал студент группы ИТ-18-1д <a href="https://vk.com/efimka08" target="_blank" title="Ссылка на мою страницу в соц. сети Вконтакте">Булгаков Ефим</a> 
+			для выполнения и защиты лабораторной работы №2 по курсу: "WEB-программирование"</font></b></p>
+		<hr color="#F5F5F5" border="none">
+	</body>
+</html>
